@@ -28,15 +28,15 @@ TestShib SAMLを選択すると、TestShibのIdP認証サイトにリダイレ�
 
 認証情報を入れてloginボタンを押すと、認証が通ればHorizonの画面に戻ってきます。
 
-![auth idp project menu](images/110_idp_project_menu.png "auth idp project menu")
+![auth idp project menu](images/210_idp_project_menu.png "auth idp project menu")
 
 プロジェクトとユーザーの情報を確認します。ドメイン名が空であることに注意します。
 
-![auth idp project](images/110_idp_project.png "auth idp project menu")
+![auth idp project](images/220_idp_project.png "auth idp project menu")
 
-![auth idp user1](images/110_idp_user1.png "auth idp user1")
+![auth idp user1](images/230_idp_user1.png "auth idp user1")
 
-![auth idp user2](images/110_idp_user2.png "auth idp user2")
+![auth idp user2](images/240_idp_user2.png "auth idp user2")
 
 ユーザーの詳細を見ると、ドメイン名に "_federated_domain" というドメイン名になっています。
 
