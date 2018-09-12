@@ -3,10 +3,10 @@
 # あらかじめ決めておくもの
 
 |項目|設定値|備考|
+|---|---|---|
 |SAMLプロトコル名|saml2||
 |IdPの名前|testshib||
 |IdPのEntity ID|https://idp.testshib.org/idp/shibboleth||
-
 |FederationしたドメインのHorizon上の表示名|\_federated\_domain||
 |Federation用ドメイン|federated\_domain||
 |Federation用プロジェクト|federated\_project||
