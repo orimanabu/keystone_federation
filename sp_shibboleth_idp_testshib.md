@@ -26,7 +26,7 @@ TestShib SAMLを選択すると、TestShibのIdP認証サイトにリダイレ�
 
 ![auth idp](images/110_idp_login.png "auth idp")
 
-認証情報を入れてloginボタンを押すと、認証が通ればHorizonの画面に戻ってきます。
+認証情報を入れてloginボタンを押すと、IdP側でユーザー名とパスワードの確認を行い、認証が通れば再びリダイレクトされて、Horizonの画面に戻ってきます。
 
 ![auth idp project menu](images/210_idp_project_menu.png "auth idp project menu")
 
