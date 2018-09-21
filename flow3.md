@@ -59,6 +59,7 @@ After successfully authenticated, TestShib sends SAML assertion back to Keystone
 
 #### SAML info
 
+<!--
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <saml2p:Response Destination="http://osp13ps-sp-shib.osptest.local:5000/Shibboleth.sso/SAML2/POST"
@@ -113,16 +114,30 @@ After successfully authenticated, TestShib sends SAML assertion back to Keystone
     </saml2:EncryptedAssertion>
 </saml2p:Response>
 ```
+-->
 
 ```xml
 <?xml version="1.0" ?>
-<saml2p:Response Destination="http://osp13ps-sp-shib.osptest.local:5000/Shibboleth.sso/SAML2/POST" ID="_cbdf05b30eda7d04effc57425da14ca5" InResponseTo="_07da0c0e3de2bfaf17dd28f3f7e9ce40" IssueInstant="2018-09-21T10:26:34.453Z" Version="2.0" xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol">
-    <saml2:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">https://idp.testshib.org/idp/shibboleth</saml2:Issuer>
+<saml2p:Response
+        Destination="http://osp13ps-sp-shib.osptest.local:5000/Shibboleth.sso/SAML2/POST"
+		ID="_cbdf05b30eda7d04effc57425da14ca5"
+		InResponseTo="_07da0c0e3de2bfaf17dd28f3f7e9ce40"
+		IssueInstant="2018-09-21T10:26:34.453Z"
+		Version="2.0"
+		xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol">
+    <saml2:Issuer
+            Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity"
+			xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+        https://idp.testshib.org/idp/shibboleth
+    </saml2:Issuer>
     <saml2p:Status>
         <saml2p:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
     </saml2p:Status>
     <saml2:EncryptedAssertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
-        <xenc:EncryptedData Id="_632c9148ed5bb87237634f684bba9011" Type="http://www.w3.org/2001/04/xmlenc#Element" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">
+        <xenc:EncryptedData
+		        Id="_632c9148ed5bb87237634f684bba9011"
+				Type="http://www.w3.org/2001/04/xmlenc#Element"
+				xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">
                 <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"/>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                         <xenc:EncryptedKey Id="_a23ae3a6c4182e8437b626ec4adedca7" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">
