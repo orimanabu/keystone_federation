@@ -110,3 +110,17 @@
 |origin: |http://osp13ps-sp-shib.osptest.local/dashboard/auth/websso/|
 
 
+### Shibboleth logs
+
+debug logs from shibd
+
+```
+2018-09-21 19:26:08 DEBUG Shibboleth.Listener [1]: dispatching message (default::getHeaders::Application)
+2018-09-21 19:26:08 DEBUG Shibboleth.Listener [1] [default]: dispatching message (default/Login::run::SAML2SI)
+2018-09-21 19:26:08 DEBUG XMLTooling.StorageService [1] [default]: inserted record (de9128ec4313662480bf8f27ab63bdf70855ab48507107b17d16ae9759304292) in context (RelayState) with expiration (1537526168)
+2018-09-21 19:26:08 DEBUG OpenSAML.MessageEncoder.SAML2Redirect [1] [default]: validating input
+2018-09-21 19:26:08 DEBUG OpenSAML.MessageEncoder.SAML2Redirect [1] [default]: marshalling, deflating, base64-encoding the message
+2018-09-21 19:26:08 DEBUG OpenSAML.MessageEncoder.SAML2Redirect [1] [default]: marshalled message:
+<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" AssertionConsumerServiceURL="http://osp13ps-sp-shib.osptest.local:5000/Shibboleth.sso/SAML2/POST" Destination="https://idp.testshib.org/idp/profile/SAML2/Redirect/SSO" ID="_07da0c0e3de2bfaf17dd28f3f7e9ce40" IssueInstant="2018-09-21T10:26:08Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">https://osp13ps-sp-shib.osptest.local/shibboleth</saml:Issuer><samlp:NameIDPolicy AllowCreate="1"/></samlp:AuthnRequest>
+2018-09-21 19:26:08 DEBUG OpenSAML.MessageEncoder.SAML2Redirect [1] [default]: message encoded, sending redirect to client
+```
