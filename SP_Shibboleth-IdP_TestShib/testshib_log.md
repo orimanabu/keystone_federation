@@ -1,0 +1,502 @@
+```
+06:23:47.714 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:274] - Attempting to encrypt assertion to relying party 'https://anintrpt02.dev.activenetwork.com/shibboleth'
+06:23:47.715 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:279] - Assertion to be encrypted is:
+<?xml version="1.0" encoding="UTF-8"?><saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" ID="_cad81f9eebe02dd4db8e92244448fd96" IssueInstant="2018-09-21T10:23:47.704Z" Version="2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <saml2:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://idp.testshib.org/idp/shibboleth</saml2:Issuer>
+   <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+      <ds:SignedInfo>
+         <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+         <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+         <ds:Reference URI="#_cad81f9eebe02dd4db8e92244448fd96">
+            <ds:Transforms>
+               <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+               <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                  <ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="xs"/>
+               </ds:Transform>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <ds:DigestValue>dJfo4tSn/bescuEOW/g328Qgsg8fkHvcB0lgeW9Ti2Y=</ds:DigestValue>
+         </ds:Reference>
+      </ds:SignedInfo>
+      <ds:SignatureValue>TSwiWm0lmKfRmuunpAu/9odZTgNUVKscDlsVqrVUOwltKUxAxTxxTQFDxrgr3R0ha4lX+ezm0Cpy/ySoeX8FLGXxSnN0FmzWfxKARDGQCaj6/chmsoO/me7Af1GfrdVhhtOM+LNxz7U6ZYGQXuK4kVGnfaxncz+3drgKY/QcGzEomHglx/Ikg277gQ1X4qVnh4jP0qLEAonQCuLeo8zLA5DiHhitiqT187EEvg7mm2xhaX0P3x2nl4JYk1mK1pDYov+dy8MWF40XFQKofGEZL2lBNbP7uX1xncKT3vJkzz41vH2JTX+1IpyoOugyeTc4K4txgKbxrVOLj7vqDM/RqQ==</ds:SignatureValue>
+      <ds:KeyInfo>
+         <ds:X509Data>
+            <ds:X509Certificate>MIIDAzCCAeugAwIBAgIVAPX0G6LuoXnKS0Muei006mVSBXbvMA0GCSqGSIb3DQEBCwUAMBsxGTAX
+BgNVBAMMEGlkcC50ZXN0c2hpYi5vcmcwHhcNMTYwODIzMjEyMDU0WhcNMzYwODIzMjEyMDU0WjAb
+MRkwFwYDVQQDDBBpZHAudGVzdHNoaWIub3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+AQEAg9C4J2DiRTEhJAWzPt1S3ryhm3M2P3hPpwJwvt2q948vdTUxhhvNMuc3M3S4WNh6JYBs53R+
+YmjqJAII4ShMGNEmlGnSVfHorex7IxikpuDPKV3SNf28mCAZbQrX+hWA+ann/uifVzqXktOjs6Dd
+zdBnxoVhniXgC8WCJwKcx6JO/hHsH1rG/0DSDeZFpTTcZHj4S9MlLNUtt5JxRzV/MmmB3ObaX0CM
+qsSWUOQeE4nylSlp5RWHCnx70cs9kwz5WrflnbnzCeHU2sdbNotBEeTHot6a2cj/pXlRJIgPsrL/
+4VSicPZcGYMJMPoLTJ8mdy6mpR6nbCmP7dVbCIm/DQIDAQABoz4wPDAdBgNVHQ4EFgQUUfaDa2mP
+i24x09yWp1OFXmZ2GPswGwYDVR0RBBQwEoIQaWRwLnRlc3RzaGliLm9yZzANBgkqhkiG9w0BAQsF
+AAOCAQEASKKgqTxhqBzROZ1eVy++si+eTTUQZU4+8UywSKLia2RattaAPMAcXUjO+3cYOQXLVASd
+lJtt+8QPdRkfp8SiJemHPXC8BES83pogJPYEGJsKo19l4XFJHPnPy+Dsn3mlJyOfAa8RyWBS80u5
+lrvAcr2TJXt9fXgkYs7BOCigxtZoR8flceGRlAZ4p5FPPxQR6NDYb645jtOTMVr3zgfjP6Wh2dt+
+2p04LG7ENJn8/gEwtXVuXCsPoSCDx9Y0QmyXTJNdV1aB0AhORkWPlFYwp+zOyOIR+3m1+pqWFpn0
+eT/HrxpdKa74FA3R2kq4R7dXe4G0kUgXTdqXMLRKhDgdmA==</ds:X509Certificate>
+         </ds:X509Data>
+      </ds:KeyInfo>
+   </ds:Signature>
+   <saml2:Subject>
+      <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient" NameQualifier="https://idp.testshib.org/idp/shibboleth" SPNameQualifier="https://anintrpt02.dev.activenetwork.com/shibboleth">_9fc56a86ffdc676921f42d082395d96c</saml2:NameID>
+      <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+         <saml2:SubjectConfirmationData Address="69.194.141.53" InResponseTo="_ce51653aac38e705b24157e5512d885b" NotOnOrAfter="2018-09-21T10:28:47.704Z" Recipient="https://ANINTRPT02.dev.activenetwork.com/Shibboleth.sso/SAML2/POST"/>
+      </saml2:SubjectConfirmation>
+   </saml2:Subject>
+   <saml2:Conditions NotBefore="2018-09-21T10:23:47.704Z" NotOnOrAfter="2018-09-21T10:28:47.704Z">
+      <saml2:AudienceRestriction>
+         <saml2:Audience>https://anintrpt02.dev.activenetwork.com/shibboleth</saml2:Audience>
+      </saml2:AudienceRestriction>
+   </saml2:Conditions>
+   <saml2:AuthnStatement AuthnInstant="2018-09-21T10:23:47.488Z" SessionIndex="_5a91d4dfec629649785bb4156ccc09b7">
+      <saml2:SubjectLocality Address="69.194.141.53"/>
+      <saml2:AuthnContext>
+         <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml2:AuthnContextClassRef>
+      </saml2:AuthnContext>
+   </saml2:AuthnStatement>
+   <saml2:AttributeStatement>
+      <saml2:Attribute FriendlyName="uid" Name="urn:oid:0.9.2342.19200300.100.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">myself</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="eduPersonAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Member</saml2:AttributeValue>
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Staff</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">myself@testshib.org</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">And I</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Member@testshib.org</saml2:AttributeValue>
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Staff@testshib.org</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Me Myself</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="eduPersonEntitlement" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">urn:mace:dir:entitlement:common-lib-terms</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Me Myself And I</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue>
+            <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" NameQualifier="https://idp.testshib.org/idp/shibboleth" SPNameQualifier="https://anintrpt02.dev.activenetwork.com/shibboleth">bTjnQd8u13ULxvem6RXZQSI82YQ=</saml2:NameID>
+         </saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="telephoneNumber" Name="urn:oid:2.5.4.20" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">555-5555</saml2:AttributeValue>
+      </saml2:Attribute>
+   </saml2:AttributeStatement>
+</saml2:Assertion>
+
+06:23:47.717 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:331] - secondarily indexing user session by name identifier
+06:23:47.717 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:796] - Encoding response to SAML request _ce51653aac38e705b24157e5512d885b from relying party https://anintrpt02.dev.activenetwork.com/shibboleth
+06:23:47.719 - INFO [Shibboleth-Audit:1028] - 20180921T102347Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_ce51653aac38e705b24157e5512d885b|https://anintrpt02.dev.activenetwork.com/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|https://idp.testshib.org/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_ac27a0e08e508d3b597ff0da265f49c9|myself|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,eduPersonAffiliation,eduPersonPrincipalName,surname,eduPersonScopedAffiliation,givenName,eduPersonEntitlement,commonName,transientId,eduPersonTargetedID,telephoneNumber,|_9fc56a86ffdc676921f42d082395d96c||
+06:26:08.755 - INFO [Shibboleth-Access:73] - 20180921T102608Z|125.54.67.242|idp.testshib.org:443|/profile/SAML2/Redirect/SSO|
+06:26:08.755 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:86] - shibboleth.HandlerManager: Looking up profile handler for request path: /SAML2/Redirect/SSO
+06:26:08.755 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:97] - shibboleth.HandlerManager: Located profile handler of the following type for the request path: edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler
+06:26:08.755 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:339] - LoginContext key cookie was not present in request
+06:26:08.756 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:188] - Incoming request does not contain a login context, processing as first leg of request
+06:26:08.756 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:366] - Decoding message with decoder binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
+06:26:08.758 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:128] - Looking up relying party configuration for https://osp13ps-sp-shib.osptest.local/shibboleth
+06:26:08.759 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:134] - No custom relying party configuration found for https://osp13ps-sp-shib.osptest.local/shibboleth, looking up configuration based on metadata groups.
+06:26:08.759 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:157] - No custom or group-based relying party configuration found for https://osp13ps-sp-shib.osptest.local/shibboleth. Using default relying party configuration.
+06:26:08.760 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:387] - Decoded request from relying party 'https://osp13ps-sp-shib.osptest.local/shibboleth'
+06:26:08.760 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:128] - Looking up relying party configuration for https://osp13ps-sp-shib.osptest.local/shibboleth
+06:26:08.761 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:134] - No custom relying party configuration found for https://osp13ps-sp-shib.osptest.local/shibboleth, looking up configuration based on metadata groups.
+06:26:08.761 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:157] - No custom or group-based relying party configuration found for https://osp13ps-sp-shib.osptest.local/shibboleth. Using default relying party configuration.
+06:26:08.761 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:226] - Creating login context and transferring control to authentication engine
+06:26:08.762 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:181] - Storing LoginContext to StorageService partition loginContexts, key 5fd1420e4346cdf54c7c860cd8519d09a8d11618c7b6023ba2d66ff1c5b7efe9
+06:26:08.762 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:240] - Redirecting user to authentication engine at https://idp.testshib.org:443/idp/AuthnEngine
+06:26:09.148 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:209] - Processing incoming request
+06:26:09.148 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:240] - Beginning user authentication process.
+06:26:09.148 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:283] - Filtering configured LoginHandlers: {urn:oasis:names:tc:SAML:2.0:ac:classes:PreviousSession=edu.internet2.middleware.shibboleth.idp.authn.provider.PreviousSessionLoginHandler@356564a7, urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport=edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler@13b32b54}
+06:26:09.148 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:332] - Filtering out previous session login handler because there is no existing IdP session
+06:26:09.149 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:464] - Selecting appropriate login handler from filtered set {urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport=edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler@13b32b54}
+06:26:09.149 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:497] - Authenticating user with login handler of type edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler
+06:26:09.149 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler:66] - Redirecting to https://idp.testshib.org:443/idp/Authn/UserPassword
+06:26:09.726 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginServlet:150] - Redirecting to login page /login.jsp
+06:26:14.346 - INFO [Shibboleth-Access:73] - 20180921T102614Z|77.99.90.43|idp.testshib.org:443|/profile/SAML2/Redirect/SSO|
+06:26:14.346 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:86] - shibboleth.HandlerManager: Looking up profile handler for request path: /SAML2/Redirect/SSO
+06:26:14.346 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:97] - shibboleth.HandlerManager: Located profile handler of the following type for the request path: edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler
+06:26:14.346 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:339] - LoginContext key cookie was not present in request
+06:26:14.346 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:188] - Incoming request does not contain a login context, processing as first leg of request
+06:26:14.347 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:366] - Decoding message with decoder binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
+06:26:14.349 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:128] - Looking up relying party configuration for https://shibbolethsp.jstor.org/shibboleth
+06:26:14.349 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:134] - No custom relying party configuration found for https://shibbolethsp.jstor.org/shibboleth, looking up configuration based on metadata groups.
+06:26:14.349 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:157] - No custom or group-based relying party configuration found for https://shibbolethsp.jstor.org/shibboleth. Using default relying party configuration.
+06:26:14.350 - WARN [org.opensaml.saml2.binding.security.SAML2AuthnRequestsSignedRule:81] - SPSSODescriptor role metadata for entityID 'https://shibbolethsp.jstor.org/shibboleth' could not be resolved
+06:26:14.350 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:387] - Decoded request from relying party 'https://shibbolethsp.jstor.org/shibboleth'
+06:26:14.352 - WARN [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:305] - No metadata for relying party https://shibbolethsp.jstor.org/shibboleth, treating party as anonymous
+06:26:14.352 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:222] - SAML 2 SSO profile is not configured for relying party https://shibbolethsp.jstor.org/shibboleth
+06:26:34.174 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginServlet:170] - Attempting to authenticate user myself
+06:26:34.175 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:180] - useFirstPass = false
+06:26:34.175 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:181] - tryFirstPass = false
+06:26:34.176 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:182] - storePass = false
+06:26:34.176 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:183] - clearPass = false
+06:26:34.176 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:184] - setLdapPrincipal = true
+06:26:34.176 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:185] - setLdapDnPrincipal = false
+06:26:34.176 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:186] - setLdapCredential = true
+06:26:34.177 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:187] - defaultRole = []
+06:26:34.177 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:188] - principalGroupName = null
+06:26:34.177 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:189] - roleGroupName = null
+06:26:34.177 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:77] - userRoleAttribute = [eduPersonAffiliation]
+06:26:34.178 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:83] - Created authenticator: edu.vt.middleware.ldap.auth.AuthenticatorConfig@1769565089::env={java.naming.provider.url=ldap://idp.testshib.org:389, java.naming.factory.initial=com.sun.jndi.ldap.LdapCtxFactory}
+06:26:34.178 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:108] - Looking up DN using userField
+06:26:34.178 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:193] - Search with the following parameters:
+06:26:34.179 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:194] -   dn = ou=people,dc=testshib,dc=org
+06:26:34.179 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:195] -   filter = (uid={0})
+06:26:34.179 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:196] -   filterArgs = [myself]
+06:26:34.179 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:197] -   searchControls = javax.naming.directory.SearchControls@22894d20
+06:26:34.180 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:198] -   handler = [edu.vt.middleware.ldap.handler.FqdnSearchResultHandler@64268196]
+06:26:34.180 - DEBUG [edu.vt.middleware.ldap.handler.DefaultConnectionHandler:74] - Bind with the following parameters:
+06:26:34.180 - DEBUG [edu.vt.middleware.ldap.handler.DefaultConnectionHandler:75] -   authtype = simple
+06:26:34.180 - DEBUG [edu.vt.middleware.ldap.handler.DefaultConnectionHandler:76] -   dn = null
+06:26:34.180 - DEBUG [edu.vt.middleware.ldap.handler.DefaultConnectionHandler:83] -   credential = <suppressed>
+06:26:34.186 - DEBUG [edu.vt.middleware.ldap.handler.DefaultConnectionHandler:74] - Bind with the following parameters:
+06:26:34.187 - DEBUG [edu.vt.middleware.ldap.handler.DefaultConnectionHandler:75] -   authtype = simple
+06:26:34.187 - DEBUG [edu.vt.middleware.ldap.handler.DefaultConnectionHandler:76] -   dn = uid=myself,ou=people,dc=testshib,dc=org
+06:26:34.187 - DEBUG [edu.vt.middleware.ldap.handler.DefaultConnectionHandler:83] -   credential = <suppressed>
+06:26:34.189 - INFO [edu.vt.middleware.ldap.jaas.JaasAuthenticator:176] - Authentication succeeded for dn: uid=myself,ou=people,dc=testshib,dc=org
+06:26:34.189 - DEBUG [edu.vt.middleware.ldap.jaas.JaasAuthenticator:215] - Returning attributes: 
+06:26:34.190 - DEBUG [edu.vt.middleware.ldap.jaas.JaasAuthenticator:216] -     [eduPersonAffiliation]
+06:26:34.191 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:108] - Looking up DN using userField
+06:26:34.191 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:193] - Search with the following parameters:
+06:26:34.191 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:194] -   dn = ou=people,dc=testshib,dc=org
+06:26:34.192 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:195] -   filter = (uid={0})
+06:26:34.192 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:196] -   filterArgs = [myself]
+06:26:34.192 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:197] -   searchControls = javax.naming.directory.SearchControls@719b37a1
+06:26:34.192 - DEBUG [edu.vt.middleware.ldap.auth.SearchDnResolver:198] -   handler = [edu.vt.middleware.ldap.handler.FqdnSearchResultHandler@64268196]
+06:26:34.194 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:223] - Committed the following principals: [myself[eduPersonAffiliation[Member, Staff]]]
+06:26:34.194 - DEBUG [edu.vt.middleware.ldap.jaas.LdapLoginModule:229] - Committed the following roles: [Member, Staff]
+06:26:34.195 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginServlet:178] - Successfully authenticated user myself
+06:26:34.195 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:144] - Returning control to authentication engine
+06:26:34.195 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:209] - Processing incoming request
+06:26:34.195 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:514] - Completing user authentication process
+06:26:34.196 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:585] - Validating authentication was performed successfully
+06:26:34.196 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:696] - Updating session information for principal myself
+06:26:34.196 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:700] - Creating shibboleth session for principal myself
+06:26:34.197 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:815] - Adding IdP session cookie to HTTP response
+06:26:34.197 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:715] - Recording authentication and service information in Shibboleth session for principal: myself
+06:26:34.197 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:560] - User myself authenticated with method urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport
+06:26:34.198 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:161] - Returning control to profile handler
+06:26:34.198 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:177] - Redirecting user to profile handler at https://idp.testshib.org:443/idp/profile/SAML2/Redirect/SSO
+06:26:34.392 - INFO [Shibboleth-Access:73] - 20180921T102634Z|125.54.67.242|idp.testshib.org:443|/profile/SAML2/Redirect/SSO|
+06:26:34.394 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:86] - shibboleth.HandlerManager: Looking up profile handler for request path: /SAML2/Redirect/SSO
+06:26:34.394 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:97] - shibboleth.HandlerManager: Located profile handler of the following type for the request path: edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler
+06:26:34.395 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:588] - Unbinding LoginContext
+06:26:34.395 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:614] - Expiring LoginContext cookie
+06:26:34.395 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:625] - Removed LoginContext, with key 5fd1420e4346cdf54c7c860cd8519d09a8d11618c7b6023ba2d66ff1c5b7efe9, from StorageService partition loginContexts
+06:26:34.395 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:172] - Incoming request contains a login context and indicates principal was authenticated, processing second leg of request
+06:26:34.397 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:128] - Looking up relying party configuration for https://osp13ps-sp-shib.osptest.local/shibboleth
+06:26:34.398 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:134] - No custom relying party configuration found for https://osp13ps-sp-shib.osptest.local/shibboleth, looking up configuration based on metadata groups.
+06:26:34.398 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:157] - No custom or group-based relying party configuration found for https://osp13ps-sp-shib.osptest.local/shibboleth. Using default relying party configuration.
+06:26:34.402 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:478] - Resolving attributes for principal 'myself' for SAML request from relying party 'https://osp13ps-sp-shib.osptest.local/shibboleth'
+06:26:34.402 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:119] - shibboleth.AttributeResolver resolving attributes for principal myself
+06:26:34.402 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:275] - Specific attributes for principal myself were not requested, resolving all attributes.
+06:26:34.403 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute uid for principal myself
+06:26:34.403 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:354] - Resolving data connector myLDAP for principal myself
+06:26:34.405 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:308] - Search filter: (uid=myself)
+06:26:34.405 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:363] - LDAP data connector myLDAP - Retrieving attributes from LDAP
+06:26:34.406 - DEBUG [edu.vt.middleware.ldap.handler.DefaultConnectionHandler:74] - Bind with the following parameters:
+06:26:34.406 - DEBUG [edu.vt.middleware.ldap.handler.DefaultConnectionHandler:75] -   authtype = simple
+06:26:34.407 - DEBUG [edu.vt.middleware.ldap.handler.DefaultConnectionHandler:76] -   dn = cn=testshibldap,dc=testshib,dc=org
+06:26:34.407 - DEBUG [edu.vt.middleware.ldap.handler.DefaultConnectionHandler:83] -   credential = <suppressed>
+06:26:34.410 - DEBUG [edu.vt.middleware.ldap.Ldap:193] - Search with the following parameters:
+06:26:34.410 - DEBUG [edu.vt.middleware.ldap.Ldap:194] -   dn = ou=people,dc=testshib,dc=org
+06:26:34.411 - DEBUG [edu.vt.middleware.ldap.Ldap:195] -   filter = (uid=myself)
+06:26:34.411 - DEBUG [edu.vt.middleware.ldap.Ldap:196] -   filterArgs = []
+06:26:34.412 - DEBUG [edu.vt.middleware.ldap.Ldap:197] -   searchControls = javax.naming.directory.SearchControls@71489967
+06:26:34.412 - DEBUG [edu.vt.middleware.ldap.Ldap:198] -   handler = [edu.vt.middleware.ldap.handler.FqdnSearchResultHandler@40399a55, edu.vt.middleware.ldap.handler.EntryDnSearchResultHandler@5c36364, edu.vt.middleware.ldap.handler.BinarySearchResultHandler@5eb23d30]
+06:26:34.415 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: uid[myself]
+06:26:34.415 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: eduPersonAffiliation[Member, Staff]
+06:26:34.415 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: eduPersonPrincipalName[myself@testshib.org]
+06:26:34.416 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: sn[And I]
+06:26:34.416 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: ou[people]
+06:26:34.417 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: cn[Me Myself And I]
+06:26:34.417 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: description[Self-reflection.]
+06:26:34.417 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: telephoneNumber[555-5555]
+06:26:34.418 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: userPassword[bXlzZWxm]
+06:26:34.418 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: entryDN[uid=myself,ou=people,dc=testshib,dc=org]
+06:26:34.419 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: objectClass[organizationalPerson, person, eduPerson, inetOrgPerson, top]
+06:26:34.419 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: eduPersonEntitlement[urn:mace:dir:entitlement:common-lib-terms]
+06:26:34.419 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: givenName[Me Myself]
+06:26:34.420 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute uid containing 1 values
+06:26:34.420 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute eduPersonPrincipalName for principal myself
+06:26:34.421 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute eduPersonPrincipalName containing 1 values
+06:26:34.421 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute eduPersonAffiliation for principal myself
+06:26:34.421 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute eduPersonAffiliation containing 2 values
+06:26:34.422 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute eduPersonPrimaryAffiliation for principal myself
+06:26:34.422 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute eduPersonPrimaryAffiliation containing 0 values
+06:26:34.422 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute organizationName for principal myself
+06:26:34.423 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute organizationName containing 0 values
+06:26:34.423 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute street for principal myself
+06:26:34.423 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute street containing 0 values
+06:26:34.424 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute eduPersonScopedAffiliation for principal myself
+06:26:34.424 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute eduPersonScopedAffiliation containing 2 values
+06:26:34.424 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute surname for principal myself
+06:26:34.424 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute surname containing 1 values
+06:26:34.425 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute givenName for principal myself
+06:26:34.425 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute givenName containing 1 values
+06:26:34.425 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute eduPersonNickname for principal myself
+06:26:34.425 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute eduPersonNickname containing 0 values
+06:26:34.425 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute homePhone for principal myself
+06:26:34.426 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute homePhone containing 0 values
+06:26:34.426 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute preferredLanguage for principal myself
+06:26:34.426 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute preferredLanguage containing 0 values
+06:26:34.426 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute title for principal myself
+06:26:34.427 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute title containing 0 values
+06:26:34.427 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute eduPersonOrgDN for principal myself
+06:26:34.427 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute eduPersonOrgDN containing 0 values
+06:26:34.427 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute postalCode for principal myself
+06:26:34.427 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute postalCode containing 0 values
+06:26:34.428 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute initials for principal myself
+06:26:34.428 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute initials containing 0 values
+06:26:34.428 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute pagerNumber for principal myself
+06:26:34.428 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute pagerNumber containing 0 values
+06:26:34.428 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute stateProvince for principal myself
+06:26:34.429 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute stateProvince containing 0 values
+06:26:34.429 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute eduPersonEntitlement for principal myself
+06:26:34.429 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute eduPersonEntitlement containing 1 values
+06:26:34.429 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute postOfficeBox for principal myself
+06:26:34.430 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute postOfficeBox containing 0 values
+06:26:34.430 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute organizationalUnit for principal myself
+06:26:34.430 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute organizationalUnit containing 1 values
+06:26:34.430 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute employeeType for principal myself
+06:26:34.431 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute employeeType containing 0 values
+06:26:34.431 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute commonName for principal myself
+06:26:34.431 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute commonName containing 1 values
+06:26:34.431 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute homePostalAddress for principal myself
+06:26:34.431 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute homePostalAddress containing 0 values
+06:26:34.432 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute transientId for principal myself
+06:26:34.432 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.attributeDefinition.TransientIdAttributeDefinition:97] - Building transient ID for request _07da0c0e3de2bfaf17dd28f3f7e9ce40; outbound message issuer: https://idp.testshib.org/idp/shibboleth, inbound message issuer: https://osp13ps-sp-shib.osptest.local/shibboleth, principal identifer: myself
+06:26:34.432 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.attributeDefinition.TransientIdAttributeDefinition:115] - Created transient ID _c1304cede6ddcd33d77d467ecbf1dcec for request _07da0c0e3de2bfaf17dd28f3f7e9ce40
+06:26:34.432 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute transientId containing 1 values
+06:26:34.433 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute eduPersonPrimaryOrgUnitDN for principal myself
+06:26:34.433 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute eduPersonPrimaryOrgUnitDN containing 0 values
+06:26:34.433 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute eduPersonTargetedID for principal myself
+06:26:34.433 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:354] - Resolving data connector computedID for principal myself
+06:26:34.433 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute eduPersonTargetedID containing 1 values
+06:26:34.434 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute eduPersonOrgUnitDN for principal myself
+06:26:34.434 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute eduPersonOrgUnitDN containing 0 values
+06:26:34.434 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute email for principal myself
+06:26:34.434 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute email containing 0 values
+06:26:34.434 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute departmentNumber for principal myself
+06:26:34.435 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute departmentNumber containing 0 values
+06:26:34.435 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute jpegPhoto for principal myself
+06:26:34.435 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute jpegPhoto containing 0 values
+06:26:34.435 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute telephoneNumber for principal myself
+06:26:34.435 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute telephoneNumber containing 1 values
+06:26:34.436 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute eduPersonAssurance for principal myself
+06:26:34.436 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute eduPersonAssurance containing 0 values
+06:26:34.436 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute locality for principal myself
+06:26:34.436 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute locality containing 0 values
+06:26:34.436 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute postalAddress for principal myself
+06:26:34.436 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute postalAddress containing 0 values
+06:26:34.437 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute mobileNumber for principal myself
+06:26:34.437 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute mobileNumber containing 0 values
+06:26:34.437 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute displayName for principal myself
+06:26:34.437 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute displayName containing 0 values
+06:26:34.437 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute employeeNumber for principal myself
+06:26:34.438 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute employeeNumber containing 0 values
+06:26:34.438 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:468] - Attribute uid has 1 values after post-processing
+06:26:34.438 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:468] - Attribute eduPersonAffiliation has 2 values after post-processing
+06:26:34.438 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:468] - Attribute eduPersonPrincipalName has 1 values after post-processing
+06:26:34.438 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute eduPersonPrimaryAffiliation from resolution result for principal myself.  It contains no values.
+06:26:34.439 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute organizationName from resolution result for principal myself.  It contains no values.
+06:26:34.439 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute street from resolution result for principal myself.  It contains no values.
+06:26:34.439 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:468] - Attribute surname has 1 values after post-processing
+06:26:34.439 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:468] - Attribute eduPersonScopedAffiliation has 2 values after post-processing
+06:26:34.439 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:468] - Attribute givenName has 1 values after post-processing
+06:26:34.440 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute homePhone from resolution result for principal myself.  It contains no values.
+06:26:34.440 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute eduPersonNickname from resolution result for principal myself.  It contains no values.
+06:26:34.440 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute preferredLanguage from resolution result for principal myself.  It contains no values.
+06:26:34.440 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute title from resolution result for principal myself.  It contains no values.
+06:26:34.440 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute eduPersonOrgDN from resolution result for principal myself.  It contains no values.
+06:26:34.441 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute postalCode from resolution result for principal myself.  It contains no values.
+06:26:34.441 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute initials from resolution result for principal myself.  It contains no values.
+06:26:34.441 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute pagerNumber from resolution result for principal myself.  It contains no values.
+06:26:34.441 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute stateProvince from resolution result for principal myself.  It contains no values.
+06:26:34.441 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:468] - Attribute eduPersonEntitlement has 1 values after post-processing
+06:26:34.441 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute postOfficeBox from resolution result for principal myself.  It contains no values.
+06:26:34.442 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:468] - Attribute organizationalUnit has 1 values after post-processing
+06:26:34.442 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute employeeType from resolution result for principal myself.  It contains no values.
+06:26:34.442 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:468] - Attribute commonName has 1 values after post-processing
+06:26:34.442 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute homePostalAddress from resolution result for principal myself.  It contains no values.
+06:26:34.442 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:468] - Attribute transientId has 1 values after post-processing
+06:26:34.443 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute eduPersonPrimaryOrgUnitDN from resolution result for principal myself.  It contains no values.
+06:26:34.443 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:468] - Attribute eduPersonTargetedID has 1 values after post-processing
+06:26:34.443 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute eduPersonOrgUnitDN from resolution result for principal myself.  It contains no values.
+06:26:34.443 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute departmentNumber from resolution result for principal myself.  It contains no values.
+06:26:34.443 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute email from resolution result for principal myself.  It contains no values.
+06:26:34.443 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:468] - Attribute telephoneNumber has 1 values after post-processing
+06:26:34.444 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute jpegPhoto from resolution result for principal myself.  It contains no values.
+06:26:34.444 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute postalAddress from resolution result for principal myself.  It contains no values.
+06:26:34.444 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute locality from resolution result for principal myself.  It contains no values.
+06:26:34.444 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute eduPersonAssurance from resolution result for principal myself.  It contains no values.
+06:26:34.444 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute employeeNumber from resolution result for principal myself.  It contains no values.
+06:26:34.444 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute displayName from resolution result for principal myself.  It contains no values.
+06:26:34.445 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:450] - Removing attribute mobileNumber from resolution result for principal myself.  It contains no values.
+06:26:34.445 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:137] - shibboleth.AttributeResolver resolved, for principal myself, the attributes: [uid, eduPersonAffiliation, eduPersonPrincipalName, surname, eduPersonScopedAffiliation, givenName, eduPersonEntitlement, organizationalUnit, commonName, transientId, eduPersonTargetedID, telephoneNumber]
+06:26:34.445 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:71] - shibboleth.AttributeFilterEngine filtering 12 attributes for principal myself
+06:26:34.445 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:130] - Evaluating if filter policy releaseEverythingToAnyone is active for principal myself
+06:26:34.445 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:139] - Filter policy releaseEverythingToAnyone is active for principal myself
+06:26:34.446 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute transientId for principal myself
+06:26:34.446 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute eduPersonTargetedID for principal myself
+06:26:34.446 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute eduPersonPrincipalName for principal myself
+06:26:34.446 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute title for principal myself
+06:26:34.446 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute eduPersonScopedAffiliation for principal myself
+06:26:34.447 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute eduPersonAffiliation for principal myself
+06:26:34.447 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute givenName for principal myself
+06:26:34.447 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute surname for principal myself
+06:26:34.447 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute commonName for principal myself
+06:26:34.447 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute uid for principal myself
+06:26:34.448 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute telephoneNumber for principal myself
+06:26:34.448 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute eduPersonEntitlement for principal myself
+06:26:34.448 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute uid has 1 values after filtering
+06:26:34.448 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute eduPersonAffiliation has 2 values after filtering
+06:26:34.448 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute eduPersonPrincipalName has 1 values after filtering
+06:26:34.449 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute surname has 1 values after filtering
+06:26:34.449 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute eduPersonScopedAffiliation has 2 values after filtering
+06:26:34.449 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute givenName has 1 values after filtering
+06:26:34.449 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute eduPersonEntitlement has 1 values after filtering
+06:26:34.449 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:106] - Removing attribute from return set, no more values: organizationalUnit
+06:26:34.449 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute commonName has 1 values after filtering
+06:26:34.450 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute transientId has 1 values after filtering
+06:26:34.450 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute eduPersonTargetedID has 1 values after filtering
+06:26:34.450 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute telephoneNumber has 1 values after filtering
+06:26:34.450 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:114] - Filtered attributes for principal myself.  The following attributes remain: [uid, eduPersonAffiliation, eduPersonPrincipalName, surname, eduPersonScopedAffiliation, givenName, eduPersonEntitlement, commonName, transientId, eduPersonTargetedID, telephoneNumber]
+06:26:34.450 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:505] - Creating attribute statement in response to SAML request '_07da0c0e3de2bfaf17dd28f3f7e9ce40' from relying party 'https://osp13ps-sp-shib.osptest.local/shibboleth'
+06:26:34.451 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute uid with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2StringAttributeEncoder
+06:26:34.451 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute eduPersonAffiliation with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2StringAttributeEncoder
+06:26:34.451 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute eduPersonPrincipalName with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2ScopedStringAttributeEncoder
+06:26:34.451 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute surname with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2StringAttributeEncoder
+06:26:34.452 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute eduPersonScopedAffiliation with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2ScopedStringAttributeEncoder
+06:26:34.452 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute givenName with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2StringAttributeEncoder
+06:26:34.452 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute eduPersonEntitlement with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2StringAttributeEncoder
+06:26:34.452 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute commonName with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2StringAttributeEncoder
+06:26:34.452 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:263] - Attribute transientId was not encoded (filtered by query, or no SAML2AttributeEncoder attached).
+06:26:34.453 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute eduPersonTargetedID with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2XMLObjectAttributeEncoder
+06:26:34.453 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute telephoneNumber with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2StringAttributeEncoder
+06:26:34.453 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:527] - Filtering out potential name identifier attributes which can not be encoded by edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+06:26:34.453 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute uid, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+06:26:34.454 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute eduPersonAffiliation, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+06:26:34.454 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute eduPersonPrincipalName, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+06:26:34.454 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute surname, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+06:26:34.454 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute eduPersonScopedAffiliation, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+06:26:34.455 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute givenName, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+06:26:34.455 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute eduPersonEntitlement, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+06:26:34.455 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute commonName, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+06:26:34.455 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:541] - Retaining attribute transientId which may be encoded to via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+06:26:34.455 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute eduPersonTargetedID, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+06:26:34.456 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute telephoneNumber, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+06:26:34.456 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:690] - Selecting attribute to be encoded as a name identifier by encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+06:26:34.456 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:717] - Selecting the first attribute that can be encoded in to a name identifier
+06:26:34.456 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:501] - Name identifier for relying party 'https://osp13ps-sp-shib.osptest.local/shibboleth' will be built from attribute 'transientId'
+06:26:34.457 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:868] - Using attribute 'transientId' supporting NameID format 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient' to create the NameID for relying party 'https://osp13ps-sp-shib.osptest.local/shibboleth'
+06:26:34.457 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:572] - Determining if SAML assertion to relying party 'https://osp13ps-sp-shib.osptest.local/shibboleth' should be signed
+06:26:34.457 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:653] - IdP relying party configuration 'default' indicates to sign assertions: true
+06:26:34.457 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:583] - Determining signing credntial for assertion to relying party 'https://osp13ps-sp-shib.osptest.local/shibboleth'
+06:26:34.457 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:599] - Signing assertion to relying party https://osp13ps-sp-shib.osptest.local/shibboleth
+06:26:34.467 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:274] - Attempting to encrypt assertion to relying party 'https://osp13ps-sp-shib.osptest.local/shibboleth'
+06:26:34.467 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:279] - Assertion to be encrypted is:
+<?xml version="1.0" encoding="UTF-8"?><saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" ID="_894ce3e339d28d320146e595fd6b3b2f" IssueInstant="2018-09-21T10:26:34.453Z" Version="2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <saml2:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://idp.testshib.org/idp/shibboleth</saml2:Issuer>
+   <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+      <ds:SignedInfo>
+         <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+         <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+         <ds:Reference URI="#_894ce3e339d28d320146e595fd6b3b2f">
+            <ds:Transforms>
+               <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+               <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                  <ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="xs"/>
+               </ds:Transform>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <ds:DigestValue>0z3AtPWJwI51F4toGrbmOj5GjkppYJ9k6PfxAoJu/AI=</ds:DigestValue>
+         </ds:Reference>
+      </ds:SignedInfo>
+      <ds:SignatureValue>YVZBLrblBUvMMil8jpov1c5eBQlXhCP5QyJA1/dDmftQJbbVxwb3bkZrI4jS1BKSz85ETnKdkjYXqOS0zaPZBdlq/4aLxyvfupul578LTFvu3YEPVlijHdRfk8r3K2eJUo9kaBAUI7GKNxjS2Y0dKxVJMP5DkOnIKjPJG3BdTuZUb4iG45cqEmPtzBHsA3b7u0W1U5N2crFWGDVy0khJXJK4MS5IP6R1zEnClBHgLsI+vxhfmQ0GmASfrmwSKUysTdaSdzzs0CuAwtw4TSZfPBfdUG1YI4vterD1xeWhXu8T88frQBZrQ5MGTzFM5Qp3xx3Y/FxU5wIICdrZWrx+1g==</ds:SignatureValue>
+      <ds:KeyInfo>
+         <ds:X509Data>
+            <ds:X509Certificate>MIIDAzCCAeugAwIBAgIVAPX0G6LuoXnKS0Muei006mVSBXbvMA0GCSqGSIb3DQEBCwUAMBsxGTAX
+BgNVBAMMEGlkcC50ZXN0c2hpYi5vcmcwHhcNMTYwODIzMjEyMDU0WhcNMzYwODIzMjEyMDU0WjAb
+MRkwFwYDVQQDDBBpZHAudGVzdHNoaWIub3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+AQEAg9C4J2DiRTEhJAWzPt1S3ryhm3M2P3hPpwJwvt2q948vdTUxhhvNMuc3M3S4WNh6JYBs53R+
+YmjqJAII4ShMGNEmlGnSVfHorex7IxikpuDPKV3SNf28mCAZbQrX+hWA+ann/uifVzqXktOjs6Dd
+zdBnxoVhniXgC8WCJwKcx6JO/hHsH1rG/0DSDeZFpTTcZHj4S9MlLNUtt5JxRzV/MmmB3ObaX0CM
+qsSWUOQeE4nylSlp5RWHCnx70cs9kwz5WrflnbnzCeHU2sdbNotBEeTHot6a2cj/pXlRJIgPsrL/
+4VSicPZcGYMJMPoLTJ8mdy6mpR6nbCmP7dVbCIm/DQIDAQABoz4wPDAdBgNVHQ4EFgQUUfaDa2mP
+i24x09yWp1OFXmZ2GPswGwYDVR0RBBQwEoIQaWRwLnRlc3RzaGliLm9yZzANBgkqhkiG9w0BAQsF
+AAOCAQEASKKgqTxhqBzROZ1eVy++si+eTTUQZU4+8UywSKLia2RattaAPMAcXUjO+3cYOQXLVASd
+lJtt+8QPdRkfp8SiJemHPXC8BES83pogJPYEGJsKo19l4XFJHPnPy+Dsn3mlJyOfAa8RyWBS80u5
+lrvAcr2TJXt9fXgkYs7BOCigxtZoR8flceGRlAZ4p5FPPxQR6NDYb645jtOTMVr3zgfjP6Wh2dt+
+2p04LG7ENJn8/gEwtXVuXCsPoSCDx9Y0QmyXTJNdV1aB0AhORkWPlFYwp+zOyOIR+3m1+pqWFpn0
+eT/HrxpdKa74FA3R2kq4R7dXe4G0kUgXTdqXMLRKhDgdmA==</ds:X509Certificate>
+         </ds:X509Data>
+      </ds:KeyInfo>
+   </ds:Signature>
+   <saml2:Subject>
+      <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient" NameQualifier="https://idp.testshib.org/idp/shibboleth" SPNameQualifier="https://osp13ps-sp-shib.osptest.local/shibboleth">_c1304cede6ddcd33d77d467ecbf1dcec</saml2:NameID>
+      <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+         <saml2:SubjectConfirmationData Address="125.54.67.242" InResponseTo="_07da0c0e3de2bfaf17dd28f3f7e9ce40" NotOnOrAfter="2018-09-21T10:31:34.453Z" Recipient="http://osp13ps-sp-shib.osptest.local:5000/Shibboleth.sso/SAML2/POST"/>
+      </saml2:SubjectConfirmation>
+   </saml2:Subject>
+   <saml2:Conditions NotBefore="2018-09-21T10:26:34.453Z" NotOnOrAfter="2018-09-21T10:31:34.453Z">
+      <saml2:AudienceRestriction>
+         <saml2:Audience>https://osp13ps-sp-shib.osptest.local/shibboleth</saml2:Audience>
+      </saml2:AudienceRestriction>
+   </saml2:Conditions>
+   <saml2:AuthnStatement AuthnInstant="2018-09-21T10:26:34.197Z" SessionIndex="_01fa0e743b39c7c73d8a8a19f465b7af">
+      <saml2:SubjectLocality Address="125.54.67.242"/>
+      <saml2:AuthnContext>
+         <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml2:AuthnContextClassRef>
+      </saml2:AuthnContext>
+   </saml2:AuthnStatement>
+   <saml2:AttributeStatement>
+      <saml2:Attribute FriendlyName="uid" Name="urn:oid:0.9.2342.19200300.100.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">myself</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="eduPersonAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Member</saml2:AttributeValue>
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Staff</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">myself@testshib.org</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">And I</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Member@testshib.org</saml2:AttributeValue>
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Staff@testshib.org</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Me Myself</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="eduPersonEntitlement" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">urn:mace:dir:entitlement:common-lib-terms</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Me Myself And I</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue>
+            <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" NameQualifier="https://idp.testshib.org/idp/shibboleth" SPNameQualifier="https://osp13ps-sp-shib.osptest.local/shibboleth">S9w/MmaLUlOvbaOQnxR9h5FmQdc=</saml2:NameID>
+         </saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute FriendlyName="telephoneNumber" Name="urn:oid:2.5.4.20" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">555-5555</saml2:AttributeValue>
+      </saml2:Attribute>
+   </saml2:AttributeStatement>
+</saml2:Assertion>
+
+06:26:34.471 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:331] - secondarily indexing user session by name identifier
+06:26:34.472 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:796] - Encoding response to SAML request _07da0c0e3de2bfaf17dd28f3f7e9ce40 from relying party https://osp13ps-sp-shib.osptest.local/shibboleth
+06:26:34.473 - INFO [Shibboleth-Audit:1028] - 20180921T102634Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_07da0c0e3de2bfaf17dd28f3f7e9ce40|https://osp13ps-sp-shib.osptest.local/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|https://idp.testshib.org/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_cbdf05b30eda7d04effc57425da14ca5|myself|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,eduPersonAffiliation,eduPersonPrincipalName,surname,eduPersonScopedAffiliation,givenName,eduPersonEntitlement,commonName,transientId,eduPersonTargetedID,telephoneNumber,|_c1304cede6ddcd33d77d467ecbf1dcec||
+```
