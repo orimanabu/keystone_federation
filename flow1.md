@@ -14,7 +14,6 @@
 ### Response Headers
 
 |||
-|---|---|
 |Cache-Control: |no-cache, no-store, must-revalidate, max-age=0|
 |Connection: |Keep-Alive|
 |Content-Language: |en|
