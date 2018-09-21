@@ -2,6 +2,8 @@
 
 ## Select auth type of `saml2` protocol, then press `Connect` button
 
+![auth saml](../images/010_auth_saml.png "auth saml")
+
 ### General
 
 |||

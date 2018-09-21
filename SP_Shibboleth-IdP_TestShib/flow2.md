@@ -82,7 +82,7 @@ Keystone as a SP with Shibboleth sends SAML AuthnRequest to TestShib.
 </samlp:AuthnRequest>
 ```
 
-## Redirect to `AuthnEngine`
+## Redirected to `AuthnEngine`
 
 ### General
 
@@ -126,9 +126,11 @@ Keystone as a SP with Shibboleth sends SAML AuthnRequest to TestShib.
 
 
 
-## Redirect to `UserPassword` page
+## Redirected to `UserPassword` page
 
 This is TestShib authentication page, in which users input username and password in a form.
+
+![auth idp](images/110_idp_login.png "auth idp")
 
 ### General
 
