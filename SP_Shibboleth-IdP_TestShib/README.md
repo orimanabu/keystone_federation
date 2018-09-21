@@ -9,7 +9,7 @@
 - [HTTP/SAML Flow #2](flow2.md)
 - [HTTP/SAML Flow #3](flow3.md)
 - [HTTP/SAML Flow #4](flow4.md)
-- [IdP (TestShib) log](testshib_log.md)
+- [IdP (TestShib) log](testshib_log_websso.txt)
 
 # ECP
 
