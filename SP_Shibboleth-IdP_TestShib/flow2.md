@@ -130,7 +130,7 @@ Keystone as a SP with Shibboleth sends SAML AuthnRequest to TestShib.
 
 This is TestShib authentication page, in which users input username and password in a form.
 
-![auth idp](images/110_idp_login.png "auth idp")
+![auth idp](../images/110_idp_login.png "auth idp")
 
 ### General
 
