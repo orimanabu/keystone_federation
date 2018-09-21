@@ -2,7 +2,7 @@
 
 Keystone as a SP with Shibboleth sends SAML AuthnRequest to TestShib.
 
-## Send SAML AuthnRequest to TestShib SSO Endpoint
+## Keystone SP sends SAML AuthnRequest to TestShib SSO Endpoint
 
 ### General
 
@@ -228,7 +228,7 @@ In this page, I input username (`myself`) and password (`myself`), then press `l
 
 
 
-## [https://idp.testshib.org/idp/profile/SAML2/Redirect/SSO]
+## Get back to TestShib SSO endpoint URL after authenticated
 
 ### General
 

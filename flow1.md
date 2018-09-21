@@ -1,6 +1,6 @@
 # Horizon
 
-## [login/]
+## Select auth type of `saml2` protocol, then press `Connect` button
 
 ### General
 
@@ -62,7 +62,7 @@
 |password: 
 
 
-## [http://osp13ps-sp-shib.osptest.local:5000/v3/auth/OS-FEDERATION/websso/saml2?origin=http://osp13ps-sp-shib.osptest.local/dashboard/auth/websso/]
+## Redirected to Keystone Federation URL for WebSSO, then redirect again to TestShib SSO endpoint with SAML AuthnRequest
 
 ### General
 

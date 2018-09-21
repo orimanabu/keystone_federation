@@ -1,6 +1,6 @@
 # Return to Horizon Project page, logined as user 'myself'
 
-## [http://osp13ps-sp-shib.osptest.local/dashboard/auth/websso/]
+## WebSSO URL with token
 
 ### General
 
@@ -60,7 +60,7 @@
 
 
 
-## [http://osp13ps-sp-shib.osptest.local/dashboard/]
+## Horizon Dashboard
 
 ### General
 
@@ -106,7 +106,7 @@
 
 
 
-## [http://osp13ps-sp-shib.osptest.local/dashboard/project/]
+## Horizon Project page
 
 ### General
 
