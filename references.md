@@ -45,3 +45,5 @@ Misc
 - [Peeking inside OpenStack keystone Fernet token payloads](https://blog.dolphm.com/inside-openstack-keystone-fernet-token-payloads/)
 - [SAML Federation with Openstack](https://bigjools.wordpress.com/2015/05/22/saml-federation-with-openstack/)
 - [Playing with Keystone to Keystone Federation](http://shuquan.github.io/playing-with-keystone-to-keystone-federation/)
+- [keystone/devstack/lib/federation.sh](https://github.com/openstack/keystone/blob/master/devstack/lib/federation.sh)
+- [K2K Federation Vagrant Setup](https://gist.github.com/edtubillara/174acc14c87edfbce35096a29aff308c)

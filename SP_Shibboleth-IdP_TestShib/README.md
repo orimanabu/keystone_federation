@@ -5,10 +5,10 @@
 
 # WebSSO
 
-- [HTTP/SAML Flow #1](flow1.md)
-- [HTTP/SAML Flow #2](flow2.md)
-- [HTTP/SAML Flow #3](flow3.md)
-- [HTTP/SAML Flow #4](flow4.md)
+- [HTTP/SAML Flow #1](flow1.md) (Horizon => Keystone)
+- [HTTP/SAML Flow #2](flow2.md) (Keystone => TestShib)
+- [HTTP/SAML Flow #3](flow3.md) (TestShib => Keystone)
+- [HTTP/SAML Flow #4](flow4.md) (Keystone => Horizon)
 - [IdP (TestShib) log](testshib_log_websso.txt)
 
 # ECP
