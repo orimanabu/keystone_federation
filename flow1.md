@@ -4,7 +4,6 @@
 
 ### General
 
-|||
 |---|---|
 |Request URL: |http://osp13ps-sp-shib.osptest.local/dashboard/auth/login/|
 |Request Method: |POST|
@@ -162,7 +161,7 @@
 |RelayState: |ss:mem:de9128ec4313662480bf8f27ab63bdf70855ab48507107b17d16ae9759304292|
 
 
-#### SAML info
+#### SAML AuthnRequest
 
 <!---
 ```xml
@@ -177,7 +176,14 @@
 --->
 
 ```xml
-<samlp:AuthnRequest AssertionConsumerServiceURL="http://osp13ps-sp-shib.osptest.local:5000/Shibboleth.sso/SAML2/POST" Destination="https://idp.testshib.org/idp/profile/SAML2/Redirect/SSO" ID="_07da0c0e3de2bfaf17dd28f3f7e9ce40" IssueInstant="2018-09-21T10:26:08Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
+<samlp:AuthnRequest
+  AssertionConsumerServiceURL="http://osp13ps-sp-shib.osptest.local:5000/Shibboleth.sso/SAML2/POST"
+  Destination="https://idp.testshib.org/idp/profile/SAML2/Redirect/SSO"
+  ID="_07da0c0e3de2bfaf17dd28f3f7e9ce40"
+  IssueInstant="2018-09-21T10:26:08Z"
+  ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+  Version="2.0"
+  xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
     <saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">https://osp13ps-sp-shib.osptest.local/shibboleth</saml:Issuer>
     <samlp:NameIDPolicy AllowCreate="1"/>
 </samlp:AuthnRequest>
