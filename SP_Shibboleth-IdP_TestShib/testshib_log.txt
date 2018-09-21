@@ -1,4 +1,3 @@
-```
 06:23:47.714 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:274] - Attempting to encrypt assertion to relying party 'https://anintrpt02.dev.activenetwork.com/shibboleth'
 06:23:47.715 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:279] - Assertion to be encrypted is:
 <?xml version="1.0" encoding="UTF-8"?><saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" ID="_cad81f9eebe02dd4db8e92244448fd96" IssueInstant="2018-09-21T10:23:47.704Z" Version="2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -499,4 +498,3 @@ eT/HrxpdKa74FA3R2kq4R7dXe4G0kUgXTdqXMLRKhDgdmA==</ds:X509Certificate>
 06:26:34.471 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:331] - secondarily indexing user session by name identifier
 06:26:34.472 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:796] - Encoding response to SAML request _07da0c0e3de2bfaf17dd28f3f7e9ce40 from relying party https://osp13ps-sp-shib.osptest.local/shibboleth
 06:26:34.473 - INFO [Shibboleth-Audit:1028] - 20180921T102634Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_07da0c0e3de2bfaf17dd28f3f7e9ce40|https://osp13ps-sp-shib.osptest.local/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|https://idp.testshib.org/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_cbdf05b30eda7d04effc57425da14ca5|myself|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,eduPersonAffiliation,eduPersonPrincipalName,surname,eduPersonScopedAffiliation,givenName,eduPersonEntitlement,commonName,transientId,eduPersonTargetedID,telephoneNumber,|_c1304cede6ddcd33d77d467ecbf1dcec||
-```
