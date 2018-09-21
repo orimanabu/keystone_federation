@@ -1,0 +1,59 @@
+--- /usr/lib/python2.7/site-packages/keystoneauth1/extras/_saml2/v3/saml2.py.orig	2018-09-14 10:27:00.209563154 +0900
++++ /usr/lib/python2.7/site-packages/keystoneauth1/extras/_saml2/v3/saml2.py	2018-09-14 10:43:34.456568796 +0900
+@@ -20,10 +20,13 @@
+ import requests
+ import requests.auth
+ 
++from keystoneauth1 import _utils as utils
+ from keystoneauth1 import access
+ from keystoneauth1 import exceptions
+ from keystoneauth1.identity import v3
+ 
++LOG = utils.get_logger(__name__)
++
+ _PAOS_NAMESPACE = 'urn:liberty:paos:2003-08'
+ _ECP_NAMESPACE = 'urn:oasis:names:tc:SAML:2.0:profiles:SSO:ecp'
+ _PAOS_HEADER = 'application/vnd.paos+xml'
+@@ -78,6 +81,7 @@
+ 
+ def _str_from_xml(xml, path):
+     l = xml.xpath(path, namespaces=_XML_NAMESPACES)
++    LOG.debug('XXX path={}, l={}, xml={}'.format(path, l, etree.tostring(xml)))
+     if len(l) != 1:
+         raise IndexError('%s should provide a single element list' % path)
+     return l[0]
+@@ -128,6 +132,7 @@
+             request.headers['Accept'] = ','.join([accept, _PAOS_HEADER])
+ 
+         request.headers['PAOS'] = _PAOS_VER
++        LOG.debug("XXX SamlAuth request.headers=%s" % request.headers)
+         request.register_hook('response', self._handle_response)
+         return request
+ 
+@@ -145,12 +150,17 @@
+             req = requests.Request(*send_args, **send_kwargs)
+             return sp_response.connection.send(req.prepare(), **kwargs)
+ 
++        LOG.debug("XXX PAOS authnrequest=%s" % sp_response)
++
+         authn_request = _response_xml(sp_response, 'Service Provider')
+         relay_state = _str_from_xml(authn_request, _XPATH_SP_RELAY_STATE)
+         sp_consumer_url = _str_from_xml(authn_request, _XPATH_SP_CONSUMER_URL)
+ 
+         authn_request.remove(authn_request[0])
+ 
++        LOG.debug("XXX idp url=%s" % self.identity_provider_url)
++        LOG.debug("XXX SOAP authnrequest=%s" % etree.tostring(authn_request))
++
+         idp_response = send('POST',
+                             self.identity_provider_url,
+                             headers={'Content-type': 'text/xml'},
+@@ -158,6 +168,8 @@
+                             auth=self.requests_auth)
+         history.append(idp_response)
+ 
++        LOG.debug("XXX idp_response=%s" % idp_response)
++
+         authn_response = _response_xml(idp_response, 'Identity Provider')
+         idp_consumer_url = _str_from_xml(authn_response,
+                                          _XPATH_IDP_CONSUMER_URL)
