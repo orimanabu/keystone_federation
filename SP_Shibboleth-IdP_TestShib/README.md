@@ -13,5 +13,9 @@
 
 # ECP
 
-- [Get unscoped token](ecp_unscoped_token_issue.md), [IdP (TestShib) log](testshib_log_ecp.txt)
+- [Get unscoped token](ecp_unscoped_token_issue.md)
+
+  - [Debug output](ecp_unscoped_token_issue_debug.txt) with [debug-print patch](../patches/keystoneauth1_saml2.py.diff)
+  - [IdP (TestShib) log](testshib_log_ecp.txt)
+
 - [Get scoped token and list volumes](ecp_volume_list.md)
